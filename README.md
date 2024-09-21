@@ -22,6 +22,4 @@ This project is designed as a personal website to highlight my journey as a medi
 
 - HTML5
 - CSS3
-- JavaScript
-- Bootstrap
-- FontAwesome
+- SASS
