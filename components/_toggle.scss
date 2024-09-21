@@ -1,0 +1,41 @@
+.toggle {
+    display: flex;
+    gap: 1rem;
+    margin-left:auto ;
+}
+.toggle__title {
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-medium);
+}
+.toggle__checkbox {
+display: none;
+}
+.toggle__label {
+    display: block;
+    position: relative;
+    background-color: var(--color-black);
+    border-radius: 1.5rem;
+    width: 4.5rem;
+    height:2.2rem;
+    cursor: pointer;
+    padding: 0.3rem 0.4rem;
+    transition: 0.3s;
+}
+.toggle__label::after {
+content: '';
+width: 1.6rem;
+height: 1.6rem;
+border-radius: 50%;
+display: block;
+transition: 0.3s;
+background-color: var(--color-white);
+
+}
+.toggle__checkbox:checked + .toggle__label {
+    background-color: var(--color-white); /* تغيير لون الخلفية عند التفعيل */
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+    transform: translateX(2.1rem); /* تحريك المؤشر */
+    background-color: var(--color-green); /* تغيير لون المؤشر */
+}
