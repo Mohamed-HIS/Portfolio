@@ -370,7 +370,7 @@ body,
   row-gap: 5rem;
 }
 
-.skills__item {
+.skills__column {
   transition: var(--transition-timing);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -388,7 +388,7 @@ body,
   margin-top: 1rem;
 }
 
-.skills__item:hover {
+.skills__column:hover {
   text-shadow: 0 0 2px var(--color-green);
 }
 
