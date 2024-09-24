@@ -565,13 +565,23 @@ html:has(.toggle__checkbox:checked) {
     order: -1;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .skills__list {
+    grid-template-columns: 1fr;
+  }
   .bio__pic {
     width: 100%;
   }
-  .header {
-    padding: 0;
-  }
+
   .header::before {
     z-index: 0;
   }
